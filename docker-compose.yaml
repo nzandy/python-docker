@@ -1,0 +1,11 @@
+services:
+  product-service:
+    build: product-service
+    ports:
+       - "5000:5000"
+  
+  
+  web: 
+    build: nginx
+    ports: 
+      - "80:80"
